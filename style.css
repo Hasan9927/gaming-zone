@@ -12,6 +12,9 @@ body {
   font-family: 'Work Sans', sans-serif;
 }
 /* Nav section Start */
+#common-span {
+  color: #ff42a5;
+}
 nav {
   display: flex;
   justify-content: space-between;
@@ -44,9 +47,7 @@ nav {
   font-size: 2.8125rem;
   font-weight: 700;
 }
-.nav-span {
-  color: #ff42a5;
-}
+
 .frame-img {
   width: 5.37756rem;
   height: 2.5rem;
@@ -146,7 +147,7 @@ nav {
   font-size: 3rem;
   font-weight: 700;
 }
-span {
+.funny-span {
   background: linear-gradient(180deg, #f948b2 0%, #8758f1 100%);
   background-clip: text;
   -webkit-background-clip: text;
@@ -210,6 +211,80 @@ span {
   line-height: 1.875rem;
 }
 /* card hover ends */
+/* overlap section stars */
+.overlap {
+  display: flex;
+  justify-content: center;
+  gap: 20rem;
+  margin-top: 10rem;
+  position: relative;
+}
+.overlay-right {
+  display: flex;
+  width: 100%;
+}
+.btm-img {
+  position: absolute;
+  top: 370px;
+  right: 630px;
+}
+
+.left-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: end;
+}
+.overlap-h1 {
+  font-size: 3rem;
+  font-weight: 700;
+  line-height: 3.75rem; /* 125% */
+  color: #0b0223;
+}
+.overlap-p {
+  margin-top: 1rem;
+  color: #534c64;
+  font-size: 1.125rem;
+  font-weight: 400;
+  line-height: 1.875rem;
+}
+/* overlap section ends */
+/* divide-section starts */
+.divide-section {
+  margin-top: 10rem;
+  background: linear-gradient(
+    90deg,
+    rgba(255, 66, 165, 0.03) 0%,
+    rgba(255, 66, 165, 0.03) 100%
+  );
+  padding: 5rem 10rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  grid-gap: 2rem;
+}
+.capsule {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+  padding: 0.6rem 3rem 0.6rem 0.6rem;
+  border-radius: 3.125rem;
+  background: #fff;
+  color: #0b0223;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+.capsule img {
+  width: 20%;
+}
+.capsule:hover {
+  border: 2px solid #ff42a5;
+  color: #ff42a5;
+}
+
+/* divide section ends */
 /* Media Query for mobile response */
 @media screen and (max-width: 426px) {
   html {
@@ -282,4 +357,81 @@ span {
   .nothing-p {
     text-align: center;
   }
+
+  .overlap {
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+    margin-top: 2rem;
+    position: relative;
+  }
+  .overlay-right,
+  .overlap-right * {
+    all: revert;
+  }
+  .overlap-right {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: end;
+    align-items: end;
+    margin-right: 5rem;
+  }
+  .top-img {
+    width: 80%;
+  }
+  .btm-img {
+    width: 35%;
+    position: absolute;
+    bottom: -4.5rem;
+    left: 3rem;
+  }
+  .divide-section {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    padding: 2rem;
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+  }
+  .capsule {
+    gap: 1rem;
+    padding: 0;
+    padding-right: 2rem;
+    padding-left: 0.2rem;
+  }
+  .capsule img {
+    width: 35%;
+  }
 }
+/* .divide-section {
+  margin-top: 10rem;
+  background: linear-gradient(
+    90deg,
+    rgba(255, 66, 165, 0.03) 0%,
+    rgba(255, 66, 165, 0.03) 100%
+  );
+  padding: 5rem 10rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  grid-gap: 2rem;
+}
+.capsule {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+  padding: 0.6rem 3rem 0.6rem 0.6rem;
+  border-radius: 3.125rem;
+  background: #fff;
+  color: #0b0223;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+.capsule img {
+  width: 20%;
+}
+.capsule:hover {
+  border: 2px solid #ff42a5;
+  color: #ff42a5;
+} */
