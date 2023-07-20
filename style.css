@@ -335,7 +335,7 @@ footer {
 }
 /* footer ends */
 /* Media Query for mobile response */
-@media screen and (max-width: 426px) {
+@media screen and (max-width: 499px) {
   html {
     font-size: 9px;
   }
@@ -467,9 +467,9 @@ footer {
     grid-template-columns: 1fr 1fr;
   }
 }
-@media screen and (min-width: 500px) and (max-width: 770px) {
+@media screen and (min-width: 500px) and (max-width: 992px) {
   html {
-    font-size: 11px;
+    font-size: 13px;
   }
   nav {
     flex-direction: column;
