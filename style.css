@@ -283,8 +283,57 @@ nav {
   border: 2px solid #ff42a5;
   color: #ff42a5;
 }
-
 /* divide section ends */
+/* footer stars */
+footer {
+  background: #0b0223;
+  color: #fff;
+  padding-top: 5rem;
+  padding-bottom: 7rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 3rem;
+}
+.footer-amar {
+  color: white;
+}
+.frame {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.8rem;
+}
+.links {
+  display: flex;
+  gap: 3rem;
+}
+.links-p {
+  color: #fff;
+  text-align: center;
+  font-size: 1.125rem;
+  font-weight: 600;
+}
+.logo {
+  display: flex;
+  gap: 3rem;
+}
+.logo > img {
+  width: 30px;
+}
+.more-link {
+  display: flex;
+  gap: 3rem;
+}
+.more-link-p,
+.terms-p {
+  color: rgba(255, 255, 255, 0.6);
+  text-align: center;
+  font-size: 1rem;
+  font-weight: 500;
+}
+/* footer ends */
 /* Media Query for mobile response */
 @media screen and (max-width: 426px) {
   html {
@@ -401,37 +450,64 @@ nav {
   .capsule img {
     width: 35%;
   }
+  .links {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+  .logo {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+  .logo > img {
+    width: 20px;
+  }
+  .more-link {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
 }
-/* .divide-section {
-  margin-top: 10rem;
-  background: linear-gradient(
-    90deg,
-    rgba(255, 66, 165, 0.03) 0%,
-    rgba(255, 66, 165, 0.03) 100%
-  );
-  padding: 5rem 10rem;
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-  grid-gap: 2rem;
-}
-.capsule {
+/* footer {
+  background: #0b0223;
+  color: #fff;
+  padding-top: 5rem;
+  padding-bottom: 7rem;
   display: flex;
-  justify-content: space-between;
+  flex-direction: column;
   align-items: center;
+  justify-content: center;
+  gap: 3rem;
+}
+.footer-amar {
+  color: white;
+}
+.frame {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.8rem;
+}
+.links {
+  display: flex;
+  gap: 3rem;
+}
+.links-p {
+  color: #fff;
   text-align: center;
-  padding: 0.6rem 3rem 0.6rem 0.6rem;
-  border-radius: 3.125rem;
-  background: #fff;
-  color: #0b0223;
-  font-size: 1rem;
-  font-style: normal;
+  font-size: 1.125rem;
   font-weight: 600;
-  line-height: normal;
 }
-.capsule img {
-  width: 20%;
+.logo {
+  display: flex;
+  gap: 3rem;
 }
-.capsule:hover {
-  border: 2px solid #ff42a5;
-  color: #ff42a5;
+.more-link {
+  display: flex;
+  gap: 3rem;
+}
+.more-link-p,
+.terms-p {
+  color: rgba(255, 255, 255, 0.6);
+  text-align: center;
+  font-size: 1rem;
+  font-weight: 500;
 } */
